@@ -1,6 +1,18 @@
 {
   "latest": "2.8.0",
   "versions": {
+    "2.5.14": {
+      "workflow-user-schema": "2.5.14/workflow-user-schema.json"
+    },
+    "2.5.15": {
+      "workflow-user-schema": "2.5.15/workflow-user-schema.json"
+    },
+    "2.5.16": {
+      "workflow-user-schema": "2.5.16/workflow-user-schema.json"
+    },
+    "2.5.17": {
+      "workflow-user-schema": "2.5.17/workflow-user-schema.json"
+    },
     "2.6.0": {
       "workflow-user-schema": "2.6.0/workflow-user-schema.json"
     },

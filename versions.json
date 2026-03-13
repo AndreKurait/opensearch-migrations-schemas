@@ -1,6 +1,33 @@
 {
   "latest": "2.8.0",
   "versions": {
+    "2.6.0": {
+      "workflow-user-schema": "2.6.0/workflow-user-schema.json"
+    },
+    "2.6.1": {
+      "workflow-user-schema": "2.6.1/workflow-user-schema.json"
+    },
+    "2.6.2": {
+      "workflow-user-schema": "2.6.2/workflow-user-schema.json"
+    },
+    "2.6.3": {
+      "workflow-user-schema": "2.6.3/workflow-user-schema.json"
+    },
+    "2.6.4": {
+      "workflow-user-schema": "2.6.4/workflow-user-schema.json"
+    },
+    "2.7.0": {
+      "workflow-user-schema": "2.7.0/workflow-user-schema.json"
+    },
+    "2.7.1": {
+      "workflow-user-schema": "2.7.1/workflow-user-schema.json"
+    },
+    "2.7.2": {
+      "workflow-user-schema": "2.7.2/workflow-user-schema.json"
+    },
+    "2.7.3": {
+      "workflow-user-schema": "2.7.3/workflow-user-schema.json"
+    },
     "2.8.0": {
       "workflow-user-schema": "2.8.0/workflow-user-schema.json"
     }

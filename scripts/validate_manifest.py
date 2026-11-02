@@ -5,9 +5,17 @@ from pathlib import Path
 import sys
 
 
+def reject_constant(value):
+    raise ValueError(f"Non-standard JSON number: {value}")
+
+
+def read_json(path):
+    return json.loads(path.read_text(encoding="utf-8"), parse_constant=reject_constant)
+
+
 def validate(root):
     root = root.resolve()
-    manifest = json.loads((root / "versions.json").read_text(encoding="utf-8"))
+    manifest = read_json(root / "versions.json")
     if not isinstance(manifest, dict):
         raise ValueError("versions.json must contain an object")
     versions = manifest.get("versions")
@@ -26,7 +34,7 @@ def validate(root):
             if root not in path.parents:
                 raise ValueError(f"{version}/{name}: artifact path escapes the repository")
             try:
-                json.loads(path.read_text(encoding="utf-8"))
+                read_json(path)
             except (OSError, UnicodeError, ValueError) as error:
                 raise ValueError(f"{version}/{name}: {relative}: {error}") from error
             checked += 1

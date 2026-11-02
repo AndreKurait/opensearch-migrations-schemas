@@ -23,7 +23,7 @@ python3 scripts/validate_manifest.py
 
 The offline check verifies that `latest` names a manifest entry, every artifact
 path remains inside this repository, and each referenced file exists and parses
-as JSON. CI runs the same check on pull requests and pushes.
+as JSON. CI runs the same check on pull requests and pushes to `main`.
 
 This checks artifact structure and availability. It does not compare files with
 upstream release assets, validate every JSON Schema keyword, or test a migration.

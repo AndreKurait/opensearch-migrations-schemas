@@ -1,3 +1,5 @@
+> **Frozen artifact catalog — November 2026. Existing manifests, versioned files, and URLs are preserved. No further versions are planned here. Obtain schemas for newer releases from the corresponding [OpenSearch Migrations release](https://github.com/opensearch-project/opensearch-migrations/releases).**
+
 # OpenSearch Migrations schema artifacts
 
 Versioned `workflow-user-schema.json` files and a version manifest for the public
